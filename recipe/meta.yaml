@@ -1,13 +1,13 @@
 {% set name = "sqlalchemy-access" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sqlalchemy-access-{{ version }}.tar.gz
-  sha256: 61b577dddc7975f64a567a711105450f56a1d5057e7f0ef1c5772b62a7bc2b1c
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 89174a94e0ebd6c32470282d143aef0c0fbe3aafdee2c40956cd417648cb317e
 
 build:
   noarch: python
